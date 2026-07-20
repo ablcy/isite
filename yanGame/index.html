@@ -69,6 +69,7 @@
       position: relative;
       text-align: center;
       padding: 60px 20px 40px;
+      padding-top: 98px;
       overflow: hidden;
     }
 
@@ -454,10 +455,63 @@
     /* ── HIDDEN ── */
     .hidden { display: none !important; }
 
+    /* ── SITE TOPBAR ── */
+    .site-topbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 38px;
+      z-index: 10001;
+      display: flex;
+      align-items: center;
+      padding: 0 16px;
+      gap: 10px;
+      background: rgba(8, 11, 20, 0.92);
+      border-bottom: 1px solid rgba(0, 207, 255, 0.15);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+
+    .tb-back {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 7px;
+      color: var(--muted);
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 4px 10px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: all 0.2s;
+    }
+
+    .tb-back:hover {
+      color: var(--neon-b);
+      border-color: var(--neon-b);
+      box-shadow: var(--glow-b);
+    }
+
+    .tb-divider {
+      font-size: 9px;
+      color: rgba(255, 255, 255, 0.1);
+      font-family: 'Share Tech Mono', monospace;
+    }
+
+    .tb-section {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 10px;
+      color: var(--neon-g);
+      letter-spacing: 0.15em;
+    }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 600px) {
       .games-grid { grid-template-columns: 1fr; }
       .logo { font-size: 22px; }
+      header { padding-top: 70px; }
+      .site-topbar { height: 32px; padding: 0 10px; gap: 6px; }
+      .tb-back { font-size: 6px; padding: 3px 6px; }
+      .tb-section { font-size: 8px; }
     }
 
     /* ── ENTRANCE ANIMATION ── */
@@ -480,6 +534,13 @@
   </style>
 </head>
 <body>
+
+<!-- ── SITE TOPBAR ── -->
+<header class="site-topbar">
+    <a href="../" class="tb-back">◂ YAN</a>
+    <span class="tb-divider">//</span>
+    <span class="tb-section">YanGame</span>
+</header>
 
 <div class="corner-tl"></div>
 <div class="corner-br"></div>

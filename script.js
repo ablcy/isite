@@ -131,6 +131,7 @@ document.querySelectorAll('.section').forEach(s => sectionObserver.observe(s));
 
 /* ===== Edge Nav Dots ===== */
 const edgeDots = document.querySelectorAll('.edge-dot');
+const topbarLinks = document.querySelectorAll('.topbar-link:not(.topbar-link-ext)');
 const allSections = document.querySelectorAll('.hero, .section');
 
 function updateEdgeNav() {
@@ -143,6 +144,10 @@ function updateEdgeNav() {
     edgeDots.forEach(dot => {
         const href = dot.getAttribute('href');
         dot.classList.toggle('active', href === '#' + current);
+    });
+    topbarLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        link.classList.toggle('active', href === '#' + current);
     });
 }
 
