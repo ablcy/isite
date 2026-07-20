@@ -131,7 +131,7 @@ document.querySelectorAll('.section').forEach(s => sectionObserver.observe(s));
 
 /* ===== Edge Nav Dots ===== */
 const edgeDots = document.querySelectorAll('.edge-dot');
-const topbarLinks = document.querySelectorAll('.topbar-link:not(.topbar-link-ext)');
+const topbarLinks = document.querySelectorAll('.topbar-link');
 const allSections = document.querySelectorAll('.hero, .section');
 
 function updateEdgeNav() {
