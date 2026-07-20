@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Yan — Digital Craftsman 个人主页">
+    <title>Yan</title>
+
+    <link rel="preconnect" href="https://unpkg.com">
+    <link rel="dns-prefetch" href="https://waline.luckyan.dpdns.org">
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+    <link rel="dns-prefetch" href="https://ablcy.github.io">
+    <link rel="dns-prefetch" href="https://github.com">
+    <link rel="preload" as="image" href="avatar.webp" type="image/webp">
+
+    <link rel="stylesheet" href="style.css">
+    <script>
+        (function(){
+            var t = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', t);
+        })();
+    </script>
+    <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" media="print" onload="this.media='all'">
+    <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
+</head>
+<body>
+
+    <!-- ===== TOP BAR ===== -->
+    <header class="topbar">
+        <a href="#hero" class="topbar-logo">YAN</a>
+        <div class="topbar-actions">
+            <button class="topbar-btn" id="langToggle">EN</button>
+            <button class="topbar-btn" id="themeToggle" title="切换主题">☀️</button>
+        </div>
+    </header>
+
+    <!-- ===== SECTION INDICATORS (right edge) ===== -->
+    <nav class="edge-nav" aria-label="页面导航">
+        <a href="#hero" class="edge-dot active" data-label="Home"></a>
+        <a href="#about" class="edge-dot" data-label="About"></a>
+        <a href="#work" class="edge-dot" data-label="Work"></a>
+        <a href="#contact" class="edge-dot" data-label="Contact"></a>
+    </nav>
+
+    <main>
+        <!-- ===== HERO ===== -->
+        <section class="hero" id="hero">
+            <div class="hero-grid">
+                <div class="hero-textblock">
+                    <h1 class="hero-name">Yan</h1>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-count="9">0</span>
+                            <span class="stat-unit" data-zh="个项目" data-en="Projects">个项目</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="3">0</span>
+                            <span class="stat-unit" data-zh="个平台" data-en="Platforms">个平台</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="∞">∞</span>
+                            <span class="stat-unit" data-zh="个想法" data-en="Ideas">个想法</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-avatar-block">
+                    <picture>
+                        <source srcset="avatar.webp" type="image/webp">
+                        <img src="avatar-opt.jpg" alt="Yan" class="avatar-img" loading="eager" decoding="async" fetchpriority="high">
+                    </picture>
+                </div>
+            </div>
+            <div class="hero-scroll">
+                <span data-zh="向下探索" data-en="Scroll">向下探索</span>
+            </div>
+        </section>
+
+        <!-- ===== ABOUT ===== -->
+        <section class="section about" id="about">
+            <div class="section-label">01</div>
+            <h2 class="section-title" data-zh="关于我" data-en="About Me">关于我</h2>
+            <div class="about-text">
+                <p data-zh="一个在文字与逻辑之间游走的人。偏爱深度思考，习惯在安静里慢慢沉淀，对世界保持好奇，也对自我保持清醒。" data-en="A person wandering between words and logic. Loves deep thinking, settles slowly in quietness, stays curious about the world and clear about oneself.">一个在文字与逻辑之间游走的人。偏爱深度思考，习惯在安静里慢慢沉淀，对世界保持好奇，也对自我保持清醒。</p>
+                <p data-zh="时而感性细腻，时而理性较真，不追逐喧嚣，只忠于内心。" data-en="Sometimes emotional and delicate, sometimes rational and meticulous. Not chasing noise, only loyal to the heart.">时而感性细腻，时而理性较真，不追逐喧嚣，只忠于内心。</p>
+                <p data-zh="这里是我的精神自留地，记录思考、感悟与偶然的灵光一现。" data-en="This is my spiritual sanctuary — recording thoughts, reflections, and occasional flashes of inspiration.">这里是我的精神自留地，记录思考、感悟与偶然的灵光一现。</p>
+                <p data-zh="不问来路，不问归途，只与同频者，慢慢相遇。" data-en="Not asking where I came from, not asking where I'm going — just slowly meeting those on the same frequency.">不问来路，不问归途，只与同频者，慢慢相遇。</p>
+            </div>
+        </section>
+
+        <!-- ===== WORK ===== -->
+        <section class="section work" id="work">
+            <div class="section-label">02</div>
+            <h2 class="section-title" data-zh="项目" data-en="Projects">项目</h2>
+            <div class="work-grid">
+
+                <!-- 01 Tell -->
+                <a href="https://tell.super.site/" class="work-item work-featured" target="_blank" rel="noopener">
+                    <span class="work-num">01</span>
+                    <span class="work-icon"><img src="tell-lcy.jpg" alt="Tell"></span>
+                    <div class="work-body">
+                        <h3 class="work-name">Tell</h3>
+                        <p class="work-desc" data-zh="独具创意性聊天应用" data-en="A uniquely creative chat app">独具创意性聊天应用</p>
+                    </div>
+                </a>
+
+                <!-- 02 Mark -->
+                <a href="https://marki.up.railway.app/" class="work-item" target="_blank" rel="noopener">
+                    <span class="work-num">02</span>
+                    <span class="work-icon"><img src="mark1.png" alt="Mark"></span>
+                    <div class="work-body">
+                        <h3 class="work-name">Mark</h3>
+                        <p class="work-desc" data-zh="云同步书签管理系统" data-en="Cloud-sync bookmark manager">云同步书签管理系统</p>
+                    </div>
+                </a>
+
+                <!-- 03 YanAI -->
+                <a href="https://ablcy.github.io/ai" class="work-item">
+                    <span class="work-num">03</span>
+                    <span class="work-icon">🤖</span>
+                    <div class="work-body">
+                        <h3 class="work-name">YanAI</h3>
+                        <p class="work-desc" data-zh="免费 AI 工具合集，60+ 款精选工具" data-en="Free AI tools collection, 60+ curated tools">免费 AI 工具合集，60+ 款精选工具</p>
+                    </div>
+                </a>
+
+                <!-- 04 YanTravel -->
+                <a href="https://ablcy.github.io/travel" class="work-item">
+                    <span class="work-num">04</span>
+                    <span class="work-icon">🌍</span>
+                    <div class="work-body">
+                        <h3 class="work-name">YanTravel</h3>
+                        <p class="work-desc" data-zh="全球景点推荐，36 个精选目的地" data-en="Global travel recommendations, 36 curated destinations">全球景点推荐，36 个精选目的地</p>
+                    </div>
+                </a>
+
+                <!-- 05 YanFire -->
+                <a href="https://ablcy.github.io/fire" class="work-item work-featured">
+                    <span class="work-num">05</span>
+                    <span class="work-icon">🔥</span>
+                    <div class="work-body">
+                        <h3 class="work-name">YanFire</h3>
+                        <p class="work-desc" data-zh="FIRE 生活推广，财务自由计算器" data-en="FIRE lifestyle advocacy & financial freedom calculator">FIRE 生活推广，财务自由计算器</p>
+                    </div>
+                </a>
+
+                <!-- 06 MindFlower -->
+                <a href="https://ablcy.github.io/mindflower" class="work-item">
+                    <span class="work-num">06</span>
+                    <span class="work-icon">🌸</span>
+                    <div class="work-body">
+                        <h3 class="work-name">MindFlower</h3>
+                        <p class="work-desc" data-zh="专注时间驱动花卉养成游戏" data-en="Focus-driven flower growing game">专注时间驱动花卉养成游戏</p>
+                    </div>
+                </a>
+
+                <!-- 07 YanEdu -->
+                <a href="https://ablcy.github.io/edu" class="work-item">
+                    <span class="work-num">07</span>
+                    <span class="work-icon">📚</span>
+                    <div class="work-body">
+                        <h3 class="work-name">YanEdu</h3>
+                        <p class="work-desc" data-zh="教育资源与学习分享" data-en="Educational resources and learning">教育资源与学习分享</p>
+                    </div>
+                </a>
+
+                <!-- 08 YanHealth -->
+                <a href="https://ablcy.github.io/health" class="work-item">
+                    <span class="work-num">08</span>
+                    <span class="work-icon">💪</span>
+                    <div class="work-body">
+                        <h3 class="work-name">YanHealth</h3>
+                        <p class="work-desc" data-zh="健康管理，生活自律" data-en="Health management and self-discipline">健康管理，生活自律</p>
+                    </div>
+                </a>
+
+                <!-- 09 YanGame -->
+                <a href="https://ablcy.github.io/game" class="work-item">
+                    <span class="work-num">09</span>
+                    <span class="work-icon">🎮</span>
+                    <div class="work-body">
+                        <h3 class="work-name">YanGame</h3>
+                        <p class="work-desc" data-zh="小游戏合集，休闲娱乐" data-en="Mini games collection for fun">小游戏合集，休闲娱乐</p>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- ===== CONTACT ===== -->
+        <section class="section contact" id="contact">
+            <div class="section-label">03</div>
+            <h2 class="section-title" data-zh="联系方式" data-en="Contact">联系方式</h2>
+            <div class="contact-row">
+                <a href="#" class="contact-link" id="wechatCard">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.12 2.361-.336a.722.722 0 0 1 .598.082l1.584.926a.272.272 0 0 0 .14.047c.134 0 .24-.111.24-.247 0-.06-.023-.12-.038-.177l-.327-1.233a.49.49 0 0 1 .178-.554C23.028 18.48 24 16.82 24 14.98c0-3.21-2.931-5.952-7.062-6.122zm-2.18 2.769c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.97-.982zm4.844 0c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.97-.982z"/></svg>
+                    <span class="contact-label">微信</span>
+                    <span class="contact-val">LuckYan2025</span>
+                </a>
+                <a href="mailto:ablcy@qq.com" class="contact-link">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    <span class="contact-label">Email</span>
+                    <span class="contact-val">ablcy@qq.com</span>
+                </a>
+                <a href="https://qm.qq.com/q/TpZmrSxLQQ" target="_blank" rel="noopener" class="contact-link">
+                    <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor"><path d="M6.048 3.323c.022.277-.13.523-.338.55-.21.026-.397-.176-.419-.453s.13-.523.338-.55c.21-.026.397.176.42.453Zm2.265-.24c-.603-.146-.894.256-.936.333-.027.048-.008.117.037.15.045.035.092.025.119-.003.361-.39.751-.172.829-.129l.011.007c.053.024.147.028.193-.098.023-.063.017-.11-.006-.142-.016-.023-.089-.08-.247-.118"/><path d="M11.727 6.719c0-.022.01-.375.01-.557 0-3.07-1.45-6.156-5.015-6.156S1.708 3.092 1.708 6.162c0 .182.01.535.01.557l-.72 1.795a26 26 0 0 0-.534 1.508c-.68 2.187-.46 3.093-.292 3.113.36.044 1.401-1.647 1.401-1.647 0 .979.504 2.256 1.594 3.179-.408.126-.907.319-1.228.556-.29.213-.253.43-.201.518.228.386 3.92.246 4.985.126 1.065.12 4.756.26 4.984-.126.052-.088.088-.305-.2-.518-.322-.237-.822-.43-1.23-.557 1.09-.922 1.594-2.2 1.594-3.178 0 0 1.041 1.69 1.401 1.647.168-.02.388-.926-.292-3.113a26 26 0 0 0-.534-1.508l-.72-1.795ZM9.773 5.53a.1.1 0 0 1-.009.096c-.109.159-1.554.943-3.033.943h-.017c-1.48 0-2.925-.784-3.034-.943a.1.1 0 0 1-.018-.055q0-.022.01-.04c.13-.287 1.43-.606 3.042-.606h.017c1.611 0 2.912.319 3.042.605m-4.32-.989c-.483.022-.896-.529-.922-1.229s.344-1.286.828-1.308c.483-.022.896.529.922 1.23.027.7-.344 1.286-.827 1.307Zm2.538 0c-.484-.022-.854-.607-.828-1.308.027-.7.44-1.25.923-1.23.483.023.853.608.827 1.309-.026.7-.439 1.251-.922 1.23ZM2.928 8.99q.32.063.639.117v2.336s1.104.222 2.21.068V9.363q.49.027.937.023h.017c1.117.013 2.474-.136 3.786-.396.097.622.151 1.386.097 2.284-.146 2.45-1.6 3.99-3.846 4.012h-.091c-2.245-.023-3.7-1.562-3.846-4.011-.054-.9 0-1.663.097-2.285"/></svg>
+                    <span class="contact-label">QQ</span>
+                    <span class="contact-val">3428270273</span>
+                </a>
+                <a href="https://v.douyin.com/oWVmRw3Yc7c/" target="_blank" rel="noopener" class="contact-link">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                    <span class="contact-label" data-zh="抖音" data-en="Douyin">抖音</span>
+                    <span class="contact-val">lcy9421</span>
+                </a>
+            </div>
+
+            <!-- Guestbook -->
+            <div class="collapse-bar" id="guestbookTrigger">
+                <span data-zh="留言板" data-en="Guestbook">留言板</span>
+            </div>
+            <div class="collapse-panel" id="guestbookContent">
+                <div id="waline"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== CHANGELOG ===== -->
+    <div class="changelog" id="changelog">
+        <div class="collapse-bar changelog-bar" id="changelogTrigger">
+            <span data-zh="更新日志" data-en="Changelog">更新日志</span>
+        </div>
+        <div class="collapse-panel changelog-panel" id="changelogContent">
+            <div class="changelog-list">
+
+                <div class="changelog-entry">
+                    <div class="cl-header">
+                        <span class="cl-version">v2.0.0</span>
+                        <span class="cl-date">2026-06-25</span>
+                    </div>
+                    <p class="cl-body" data-zh="从结构、布局、排版、交互层面全部重新设计。非对称 Hero 布局、Georgia 衬线标题体系、暖琥珀+冷石板灰配色、CSS Grid 杂志式项目排列、极简顶栏导航、右侧边缘滚动指示器。彻底告别模板化布局。" data-en="Complete redesign from structure, layout, typography, and interaction. Asymmetric hero layout, Georgia serif heading system, warm amber + cool slate palette, CSS Grid editorial project layout, minimal top bar nav, right-edge scroll indicators. A definitive break from template layouts.">从结构、布局、排版、交互层面全部重新设计。非对称 Hero 布局、Georgia 衬线标题体系、暖琥珀+冷石板灰配色、CSS Grid 杂志式项目排列、极简顶栏导航、右侧边缘滚动指示器。彻底告别模板化布局。</p>
+                </div>
+
+                <div class="changelog-entry">
+                    <div class="cl-header">
+                        <span class="cl-version">v1.4.2</span>
+                        <span class="cl-date">2026-06-16</span>
+                    </div>
+                    <p class="cl-body" data-zh="移除自定义光标特效，还原为系统默认光标。" data-en="Removed custom cursor effect, reverted to system default cursor.">移除自定义光标特效，还原为系统默认光标。</p>
+                </div>
+
+                <div class="changelog-entry">
+                    <div class="cl-header">
+                        <span class="cl-version">v1.4.1</span>
+                        <span class="cl-date">2026-05-29</span>
+                    </div>
+                    <p class="cl-body" data-zh="删除 YanBookmark 项目，后续项目序号顺移，总项目数由 10 减至 9。" data-en="Removed YanBookmark project, total projects reduced from 10 to 9.">删除 YanBookmark 项目，后续项目序号顺移，总项目数由 10 减至 9。</p>
+                </div>
+
+                <div class="changelog-entry">
+                    <div class="cl-header">
+                        <span class="cl-version">v1.4.0</span>
+                        <span class="cl-date">2026-05-29</span>
+                    </div>
+                    <p class="cl-body" data-zh="项目列表新增 Mark（云同步书签管理系统，排第02位）。" data-en="Added Mark (cloud-sync bookmark manager) as #02.">项目列表新增 Mark（云同步书签管理系统，排第02位）。</p>
+                </div>
+
+                <div class="changelog-entry">
+                    <div class="cl-header">
+                        <span class="cl-version">v1.3.9</span>
+                        <span class="cl-date">2026-05-24</span>
+                    </div>
+                    <p class="cl-body" data-zh="统一间距：展开留言→更新日志→运行时长均采用 2rem 间距。" data-en="Unified spacing across guestbook, changelog, and footer sections.">统一间距：展开留言→更新日志→运行时长均采用 2rem 间距。</p>
+                </div>
+
+                <div class="changelog-entry">
+                    <div class="cl-header">
+                        <span class="cl-version">v1.3.0</span>
+                        <span class="cl-date">2026-05-24</span>
+                    </div>
+                    <p class="cl-body" data-zh="🌗 新增深色/浅色主题切换，默认浅色主题。" data-en="🌗 Added dark/light theme toggle, defaults to light mode.">🌗 新增深色/浅色主题切换，默认浅色主题。</p>
+                </div>
+
+                <div class="changelog-entry">
+                    <div class="cl-header">
+                        <span class="cl-version">v1.1.4</span>
+                        <span class="cl-date">2026-04-20</span>
+                    </div>
+                    <p class="cl-body" data-zh="底部新增运营统计，评论区与更新日志改为折叠形式。" data-en="Added site stats, collapsible comments and changelog.">底部新增运营统计，评论区与更新日志改为折叠形式。</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-stats">
+            <span data-zh="已运营" data-en="Running">已运营</span>
+            <span class="footer-stat-val" id="siteRuntime">-</span>
+            <span class="footer-stat-sep">/</span>
+            <span data-zh="累计访问" data-en="Visits">累计访问</span>
+            <span class="footer-stat-val"><span id="busuanzi_value_site_pv">...</span></span>
+            <span class="footer-stat-sep">/</span>
+            <span data-zh="在线" data-en="Online">在线</span>
+            <span class="footer-stat-val"><span id="busuanzi_value_site_uv">...</span></span>
+        </div>
+        <p class="footer-copy">&copy; 2026 Li Chengyan</p>
+        <p class="footer-ver">v2.0.0</p>
+    </footer>
+
+    <!-- ===== WECHAT MODAL ===== -->
+    <div class="wechat-modal" id="wechatModal">
+        <div class="wechat-modal-bg" id="wechatModalBg"></div>
+        <div class="wechat-modal-card">
+            <button class="wechat-modal-close" id="wechatModalClose">&times;</button>
+            <img src="wechat-me.jpg" alt="微信二维码" class="wechat-qr">
+            <p class="wechat-modal-text">扫码添加微信 LuckYan2025</p>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
